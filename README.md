@@ -1,4 +1,5 @@
 # NaowhUI-TokenGenerator
+https://unamed-weasle.github.io/NaowhUI-TokenGenerator/
 
 A GitHub Pages compatible token generator based on this WoW addon flow:
 
