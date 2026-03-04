@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaowhUI Token Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>NaowhUI Token Generator</h1>
+      <p class="description">
+        Generates a free token to unlock NaowhUI.
+        Disclaimer: according to World of Warcraft Add-On development rules, addons must be free of
+        charge and have fully visible source code. See the
+        <a href="https://us.forums.blizzard.com/en/wow/t/ui-add-on-development-policy/24534" target="_blank" rel="noreferrer noopener">official UI Add-On Development Policy</a>.
+      </p>
+
+      <section class="panel">
+        <label for="epochTime">Epoch Timestamp (used for token generation)</label>
+        <input id="epochTime" type="number" min="1" step="1" />
+      </section>
+
+      <section class="panel result-panel">
+        <label for="tokenOutput">Generated Token</label>
+        <textarea id="tokenOutput" rows="5" readonly></textarea>
+        <div class="result-actions">
+          <button id="copy" type="button">Copy Token</button>
+        </div>
+      </section>
+
+      <div class="actions panel">
+        <button id="useNow" type="button">Update Time</button>
+        <button id="generate" type="button">Generate Token</button>
+      </div>
+
+      <details class="panel debug-panel">
+        <summary>Debug values</summary>
+        <label for="serverTime">Server Time</label>
+        <p class="field-description">
+          Optional. If empty, server time is inferred from epoch. You can run
+          <code>/run local x=GetServerTime() print(x)</code> in game to get the server timestamp.
+        </p>
+        <input id="serverTime" type="number" min="1" step="1" placeholder="Optional server timestamp" />
+        <pre id="debugOutput"></pre>
+      </details>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

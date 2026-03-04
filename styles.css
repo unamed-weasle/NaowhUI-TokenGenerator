@@ -1,0 +1,106 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #10141d;
+  color: #edf2ff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #c3cbe6;
+  margin-bottom: 1.5rem;
+}
+
+.description a {
+  color: #8db6ff;
+}
+
+.panel {
+  background: #1a2231;
+  border: 1px solid #2d3a53;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #415174;
+  background: #0d1320;
+  color: #edf2ff;
+  padding: 0.65rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+.result-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  background: #4f7df8;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #6690ff;
+}
+
+.status {
+  min-height: 1.5rem;
+  color: #7ae3a9;
+}
+
+.field-description {
+  margin-top: 0;
+  color: #c3cbe6;
+}
+
+.debug-panel pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
