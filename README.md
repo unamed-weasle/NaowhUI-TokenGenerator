@@ -38,4 +38,5 @@ Then open <http://localhost:8080>.
 ## Notes
 
 - Compression is done in-browser with `pako.deflateRaw`.
+- This project is Vibe coded. So if you hate AI, you will have to decide if you hate it more than Add-On paywalls ;)
 - Add-On policy reference: <https://us.forums.blizzard.com/en/wow/t/ui-add-on-development-policy/24534>.
